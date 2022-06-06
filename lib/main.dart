@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intern_design/homepage.dart';
+import 'package:intern_design/userauthpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,9 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: const HomePage(),
+      home: const UserAuthPage(),
       routes: {
         HomePage.id:(context)=>const HomePage(),
+        UserAuthPage.id:(context)=>const UserAuthPage(),
       },
     );
   }

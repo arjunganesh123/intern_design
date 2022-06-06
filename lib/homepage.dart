@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:intern_design/userauthpage.dart';
 
 class HomePage extends StatefulWidget {
   static const String id="HomePage";
@@ -84,8 +85,8 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 const SizedBox(height: 20,),
-                TextButton(onPressed: () {  },
-                child: Container(height: 45,width: 200,color: const Color.fromRGBO(0, 51, 102, 1),child: const Center(child: Text("Next",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),)),)),
+                TextButton(onPressed: () { Navigator.pushNamed(context, UserAuthPage.id); },
+                child: Container(height: 45,width: 200,color: const Color.fromRGBO(0, 51, 102, 1),child: const Center(child: Text("NEXT",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),)),)),
               ],
             ),
           ),
