@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:intern_design/otpgeneratepage.dart';
 
 class UserAuthPage extends StatefulWidget {
   static String id='UserAuthPage';
@@ -74,6 +75,7 @@ class _UserAuthPageState extends State<UserAuthPage> {
                   }
                   else{
                     print(_mobctrl.text);
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> OtpGeneratePage(phno:_mobctrl.text)));
                   }
              },
                 child: Container(height: 50,width: 320,color: const Color.fromRGBO(0, 51, 102, 1),child: const Center(child: Text("CONTINUE",style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),)),)),

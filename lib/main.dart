@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intern_design/homepage.dart';
+import 'package:intern_design/otpgeneratepage.dart';
 import 'package:intern_design/userauthpage.dart';
 
 void main() {
