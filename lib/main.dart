@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:intern_design/finishpage.dart';
 import 'package:intern_design/homepage.dart';
-import 'package:intern_design/otpgeneratepage.dart';
 import 'package:intern_design/userauthpage.dart';
+import 'package:intern_design/workingpage.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations(
+    [DeviceOrientation.portraitUp],
+  );
   runApp(const MyApp());
 }
 
@@ -14,10 +20,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: const UserAuthPage(),
+      home: const HomePage(),
       routes: {
         HomePage.id:(context)=>const HomePage(),
         UserAuthPage.id:(context)=>const UserAuthPage(),
+        WorkingPage.id:(context)=>const WorkingPage(),
+        FinishPage.id:(context)=>const FinishPage(),
       },
     );
   }

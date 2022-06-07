@@ -74,7 +74,6 @@ class _UserAuthPageState extends State<UserAuthPage> {
                     );
                   }
                   else{
-                    print(_mobctrl.text);
                     Navigator.push(context, MaterialPageRoute(builder: (context)=> OtpGeneratePage(phno:_mobctrl.text)));
                   }
              },
