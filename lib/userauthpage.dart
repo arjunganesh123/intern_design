@@ -65,7 +65,7 @@ class _UserAuthPageState extends State<UserAuthPage> {
             const SizedBox(height: 20,),
             TextButton(
                 onPressed: () {
-                  if(_mobctrl.text.length<10){
+                  if(_mobctrl.text.lengt<10){
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(
                           content: Text('Enter a Valid Mobile Number',style: TextStyle(color: Colors.white,fontSize: 15),),
