@@ -16,11 +16,11 @@ class _WorkingPageState extends State<WorkingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Padding(
-        padding: const EdgeInsets.only(top: 130),
+      body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            const SizedBox(height: 130,),
             const Text("Please select your profile",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,),),
             const SizedBox(height: 25.0,),
             MaterialButton(

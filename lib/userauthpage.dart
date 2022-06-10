@@ -19,11 +19,11 @@ class _UserAuthPageState extends State<UserAuthPage> {
       floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
       floatingActionButton: IconButton(onPressed: () { Navigator.pop(context); },
       icon: const Icon(Icons.close,size: 30,),),
-      body: Padding(
-        padding: const EdgeInsets.only(top: 130,left: 10),
+      body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            const SizedBox(height: 130,),
             const Text("Please enter your mobile number",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,),),
             const SizedBox(height: 15,),
             const Text("You'll receive a 6 digit code",style: TextStyle(fontSize: 15),),
