@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intern_design/finishpage.dart';
@@ -7,6 +8,7 @@ import 'package:intern_design/workingpage.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp();
   await SystemChrome.setPreferredOrientations(
     [DeviceOrientation.portraitUp],
   );
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: const UserAuthPage(),
+      home: const HomePage(),
       routes: {
         HomePage.id:(context)=>const HomePage(),
         UserAuthPage.id:(context)=>const UserAuthPage(),

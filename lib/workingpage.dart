@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intern_design/finishpage.dart';
@@ -20,6 +19,7 @@ class _WorkingPageState extends State<WorkingPage> {
       body: Padding(
         padding: const EdgeInsets.only(top: 130),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Text("Please select your profile",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,),),
             const SizedBox(height: 25.0,),

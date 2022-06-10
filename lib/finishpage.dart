@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FinishPage extends StatelessWidget {
@@ -33,9 +32,7 @@ class FinishPage extends StatelessWidget {
               ),
             ),
           ),
-          const Positioned(
-              top: 300,left: 100,
-              child: Text("Thank You",style: TextStyle(color: Colors.black,letterSpacing: 1.5,fontSize: 30.0,wordSpacing: 3.0,fontWeight: FontWeight.bold),))
+          const Center(child: Text("Thank You",style: TextStyle(color: Colors.black,letterSpacing: 1.5,fontSize: 30.0,wordSpacing: 3.0,fontWeight: FontWeight.bold),))
         ],
       ),
     );

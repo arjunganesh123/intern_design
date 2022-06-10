@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intern_design/otpgeneratepage.dart';
@@ -23,10 +22,11 @@ class _UserAuthPageState extends State<UserAuthPage> {
       body: Padding(
         padding: const EdgeInsets.only(top: 130,left: 10),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Text("Please enter your mobile number",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,),),
             const SizedBox(height: 15,),
-            const Text("You'll receive a 4 digit code",style: TextStyle(fontSize: 15),),
+            const Text("You'll receive a 6 digit code",style: TextStyle(fontSize: 15),),
             const Text("to verify next.",style: TextStyle(fontSize: 15),),
             const SizedBox(height: 30,),
             Container(
