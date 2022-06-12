@@ -1,19 +1,4 @@
-# intern_design
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 ![WhatsApp Image 2022-06-04 at 8 43 44 PM](https://user-images.githubusercontent.com/93365339/173220000-23596fc4-373a-490d-83bd-5a05b7121348.jpeg)
 ![WhatsApp Image 2022-06-04 at 8 43 44 PM (1)](https://user-images.githubusercontent.com/93365339/173220005-91df9c67-0a6a-4702-bbc3-2e918445f9d5.jpeg)
 ![WhatsApp Image 2022-06-04 at 8 43 45 PM](https://user-images.githubusercontent.com/93365339/173220012-041cbec8-7d84-4a73-aaba-a3b1c76a8944.jpeg)
